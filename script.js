@@ -81,3 +81,74 @@ backToTop.addEventListener("click", () => {
     });
 
 });
+/* SCROLL REVEAL ANIMATION */
+
+ScrollReveal({
+
+    reset:false,
+
+    distance:'80px',
+
+    duration:2000,
+
+    delay:200
+
+});
+
+/* HOME */
+
+ScrollReveal().reveal('.home-content', {
+
+    origin:'left'
+});
+
+ScrollReveal().reveal('.home-image', {
+
+    origin:'right'
+});
+
+/* EDUCATION */
+
+ScrollReveal().reveal('.education-box', {
+
+    origin:'bottom',
+
+    interval:200
+});
+
+/* SKILLS */
+
+ScrollReveal().reveal('.skill-item', {
+
+    origin:'bottom',
+
+    interval:150
+});
+
+/* PROJECTS */
+
+ScrollReveal().reveal('.project-card', {
+
+    origin:'bottom',
+
+    interval:200
+});
+
+/* CONTACT */
+
+ScrollReveal().reveal('.contact-info', {
+
+    origin:'left'
+});
+
+ScrollReveal().reveal('#contact-form', {
+
+    origin:'right'
+});
+
+/* FOOTER */
+
+ScrollReveal().reveal('.footer', {
+
+    origin:'bottom'
+});
