@@ -23,7 +23,9 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:#1e293b;
+    background:#123367;
+    animation:slideDown 1s ease;
+    
 }
 
 .logo{
@@ -33,15 +35,77 @@ body{
     font-weight:600;
 }
 
+/* NAVBAR LINKS */
+
 .navbar a{
+
+    position:relative;
+
     color:white;
+
+    font-size:18px;
+
+    margin-left:35px;
+
     text-decoration:none;
-    margin-left:25px;
-    transition:0.3s;
+
+    font-weight:500;
+
+    transition:0.4s ease;
+}
+/* HEADER SLIDE */
+
+@keyframes slideDown{
+
+    0%{
+
+        transform:translateY(-100px);
+
+        opacity:0;
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+        opacity:1;
+    }
 }
 
+/* HOVER COLOR */
+
 .navbar a:hover{
+
     color:#38bdf8;
+}
+
+/* ANIMATED UNDERLINE */
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0%;
+
+    height:3px;
+
+    background:#38bdf8;
+
+    border-radius:10px;
+
+    transition:0.4s ease;
+}
+
+/* HOVER UNDERLINE */
+
+.navbar a:hover::after{
+
+    width:100%;
 }
 
 /* HOME SECTION */
@@ -141,12 +205,18 @@ button{
     }
 
     .navbar.active{
-        display:flex;
-    }
+
+    right:0;
+
+    opacity:1;
+}
 
     .navbar a{
         margin:15px 0;
         display:block;
+        transition:0.5s ease;
+
+opacity:0;
     }
 }/* ABOUT SECTION */
 
@@ -1167,4 +1237,89 @@ html{
     color:white;
 
     transform:translateY(-3px);
+}
+/* CV BUTTONS */
+
+.cv-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+/* VIEW CV BUTTON */
+
+.view-cv{
+
+    padding:14px 30px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:0.4s ease;
+
+    box-shadow:0 0 15px rgba(56,189,248,0.4);
+}
+
+/* HOVER */
+
+.view-cv:hover{
+
+    background:#0ea5e9;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px #38bdf8;
+}
+
+/* DOWNLOAD ICON BUTTON */
+
+.download-cv{
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#1e293b;
+
+    color:#38bdf8;
+
+    border:2px solid #38bdf8;
+
+    border-radius:50%;
+
+    font-size:22px;
+
+    text-decoration:none;
+
+    transition:0.4s ease;
+}
+
+/* HOVER */
+
+.download-cv:hover{
+
+    background:#38bdf8;
+
+    color:white;
+
+    transform:translateY(-3px) rotate(360deg);
+
+    box-shadow:0 0 20px #38bdf8;
 }

@@ -12,6 +12,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    
 
     <!-- HEADER -->
     <!-- HEADER -->
@@ -44,9 +45,30 @@
                 I create responsive websites using HTML, CSS, and JavaScript.
             </p>
 
-            <a href="dhinesh_resume.pdf" download class="cv-btn">
-                Download Resume
-            </a>
+            <div class="cv-buttons">
+
+    <!-- VIEW CV -->
+
+    <a href="dhinesh_resume.pdf"
+       target="_blank"
+       class="view-cv">
+
+        View CV
+
+    </a>
+
+    <!-- DOWNLOAD CV -->
+
+    <a href="dhinesh_resume.pdf"
+       download
+       class="download-cv">
+
+       <i class='bx bx-download'></i>
+
+    </a>
+
+</div>
+            
         </div>
 
         <div class="home-image">
@@ -472,21 +494,16 @@
     </p>
 
 </footer>
-    <!-- JS File -->
-   <!-- EMAILJS -->
+<!-- EMAILJS -->
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<!-- SCROLL REVEAL -->
 
-<script src="https://unpkg.com/scrollreveal"></script>
+
+
 <!-- MAIN JS -->
 
 <script src="script.js"></script>
-<!-- BACK TO TOP BUTTON -->
-
-<button id="backToTop">
-    <i class='bx bx-up-arrow-alt'></i>
 </button>
 </body>
 </html>
